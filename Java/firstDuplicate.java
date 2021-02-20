@@ -6,7 +6,7 @@
 *to store the positions of values.
 *
 *Likely there is a way without hashmap?
-*
+*/
 
 int firstDuplicate(int[] a) {
     if (a.length > 1) {
