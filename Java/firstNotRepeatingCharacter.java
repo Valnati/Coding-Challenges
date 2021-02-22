@@ -3,17 +3,17 @@ import java.util.Map;
 
 public class firstNotRepeatingCharacter {
 
-	/***
-	 * Given a string s consisting of small English letters, 
-	 * find and return the first instance of a non-repeating 
-	 * character in it. If there is no such character, return '_'.
-	 * 
-	 * Original answer used Hashmap
-   * also consider simple array, so position is saved inherently
-	 * 
-	 * @param s
-	 * @return
-	 */
+/***
+ * Given a string s consisting of small English letters, 
+ * find and return the first instance of a non-repeating 
+ * character in it. If there is no such character, return '_'.
+ * 
+ * Original answer used Hashmap
+* also consider simple array, so position is saved inherently
+ * 
+ * @param s
+ * @return
+ */
 	
     public static void main (String[] args) {
         String a = "I am a string with many duplicates";
