@@ -1,4 +1,4 @@
-// Singly-linked lists are already defined with this interface:
+// The class for the list node is defined as:
 // class ListNode<T> {
 //   ListNode(T x) {
 //     value = x;
@@ -11,23 +11,23 @@
 // It uses two pointers to cycle through nodes,
 // after checking the list is long enough to do so.
 
-ListNode<Integer> removeKFromList(ListNode<Integer> l, int k) {    
-    ListNode<Integer> p1 = l;
+ListNode<Integer> removeJFromList(ListNode<Integer> n, int j) {    
+    ListNode<Integer> p1 = n;
     
-    //l is size 0
-    if (p1 == null) return l;
+    //j is size 0
+    if (p1 == null) return n;
     
     ListNode<Integer> p2 = p1.next;
 
-    //l is size 1
+    //j is size 1
     if (p2 == null) {
-        if (p1.value == k) return l.next;
-        else return l;
+        if (p1.value == j) return n.next;
+        else return n;
     }
     
     //skip first node until after loop
     while (p2 != null) {
-        if (p2.value == k) {
+        if (p2.value == j) {
             p1.next = p2.next;
             p2 = p1.next;
         } else {
@@ -36,6 +36,6 @@ ListNode<Integer> removeKFromList(ListNode<Integer> l, int k) {
         }
     }
     //check first node
-    if (l.value == k) return l.next;
-    else return l;
+    if (n.value == j) return n.next;
+    else return n;
 }
