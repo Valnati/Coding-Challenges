@@ -4,8 +4,8 @@
 * The process is to do two movements:
 * First, transpose with respect to the top left/ bottom right.
 * Second, reverse each row. 
-* Temp variable used to complete in place.
-* 
+* The space cost is constant, with a temp variable used to complete in place.
+* The time cost is O(n^2), as we must manipulate each cell of the matrix twice.
 */
 
 int[][] rotateImage(int[][] a) {
