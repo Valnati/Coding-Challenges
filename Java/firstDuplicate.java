@@ -5,7 +5,11 @@
 *Uses a HashMap and light dynamic programming
 *to store the positions of values.
 *
-*Likely there is a way without hashmap?
+* The space cost is constant.
+* The time cost is O(n), where n is the size of the int array.
+* It is iterated through once to form the HashMap.
+* 
+* Likely there is a way without hashmap?
 */
 
 int firstDuplicate(int[] a) {
