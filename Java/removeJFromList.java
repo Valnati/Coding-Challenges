@@ -7,9 +7,16 @@
 //   ListNode<T> next;
 // }
 //
-// This iterative approach ignores the first node until the end
+// Given a ListNode as head of a list, and a value,
+// remove the first node with that value from the list.
+//
+// This iterative approach ignores the first node until the end.
 // It uses two pointers to cycle through nodes,
 // after checking the list is long enough to do so.
+//
+// The space cost is constant, as two ListNodes are made.
+// The time cost is O(n), where n is the size of the list,
+//as in the worst case we will iterate through the entire list.
 
 ListNode<Integer> removeJFromList(ListNode<Integer> n, int j) {    
     ListNode<Integer> p1 = n;
