@@ -1,7 +1,9 @@
-//Given an array and a maximum value the array may hold
-//the array is sorted in linear, or O(2n) time.
-//This requires a maximum in the array, which could be found
-//through another iteration to get the max value.
+/********
+Given an array and a maximum value the array may hold
+the array is sorted in linear, or O(2n) time.
+This requires a maximum in the array, which could be found
+through another iteration to get the max value.
+**********/
 
 import java.util.Arrays;
 
@@ -28,10 +30,10 @@ public class SortScores {
         return orderedArray;
     }
     
-	public static void main (String[] args) {
-		int[] unordered = {60, 33, 50, 99, 1, 33, 67, 2, 3, 3, 45};
-		int[] ordered = sortScores(unordered, 100);
-		System.out.println(Arrays.toString(ordered));
-    //output: [99, 67, 60, 50, 45, 33, 33, 3, 3, 2, 1]
-	}
+    public static void main (String[] args) {
+	int[] unordered = {60, 33, 50, 99, 1, 33, 67, 2, 3, 3, 45};
+	int[] ordered = sortScores(unordered, 100);
+	System.out.println(Arrays.toString(ordered));
+    	//output: [99, 67, 60, 50, 45, 33, 33, 3, 3, 2, 1]
+    }
 }
