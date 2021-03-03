@@ -3,13 +3,17 @@ import java.util.HashMap;
 import java.util.HashSet;
 
 public class isSumPossible {
-	//Given an array of numbers and a value, 
-	//return whether it's possible for two numbers
-	//to sum to the given value. Each number
-	//can only be used once.
-
-    //Approach one uses a hashmap, counting occurences of each number.
-    //Approach two uses a hashset, and does not store this information.
+//Given an array of numbers and a value, 
+//return whether it's possible for two numbers
+//to sum to the given value. Each number
+//can only be used once.
+//
+//Approach one uses a hashmap, counting occurences of each number.
+//Approach two uses a hashset, and does not store this information.
+// In both cases the space cost is constant.
+// The time cost is O(n) where n is the size of the int array.
+// Specifically, we loop through the array to create the Hash group,
+// and then loop a second time to check the hash for a sum.
   
 	public static boolean isSumPossibleHashMap(int[] a, int k) {
     
